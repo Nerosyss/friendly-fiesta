@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Landing page de ventas lista para usar. Convierte visitas en clientes con un diseño limpio y profesional." />
+  <title>VendeCon — Landing Page</title>
+
+  <!-- Open Graph (cambia estos datos si la vas a compartir) -->
+  <meta property="og:title" content="VendeCon — Aumenta tus ventas" />
+  <meta property="og:description" content="Una landing page enfocada en conversión: clara, rápida y responsive." />
+  <meta property="og:type" content="website" />
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#top" aria-label="Ir al inicio">
+        <span class="logo" aria-hidden="true"></span>
+        <span>VendeCon</span>
+      </a>
+
+      <nav style="position:relative;">
+        <button class="btn ghost menu-btn" id="menuBtn" type="button" aria-label="Abrir menú">
+          ☰ Menú
+        </button>
+        <ul id="menu">
+          <li><a href="#beneficios">Beneficios</a></li>
+          <li><a href="#testimonios">Opiniones</a></li>
+          <li><a href="#precios">Precios</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a class="btn primary" href="#contacto" style="padding:10px 14px;">Quiero vender más</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top" class="container">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-grid">
+        <div>
+          <div class="pill"><span class="dot"></span> Plantilla lista para vender (HTML5 + CSS)</div>
+          <h1>Convierte visitas en clientes.<br/>Sin humo. Con diseño.</h1>
+          <p class="sub">
+            Una landing page enfocada en conversión: clara, rápida, responsive y fácil de editar.
+            Ideal para vender un servicio, curso, producto digital o agendar llamadas.
+          </p>
+
+          <div class="cta-row">
+            <a class="btn primary" href="#precios">Ver precios</a>
+            <a class="btn" href="#beneficios">Qué incluye</a>
+            <span class="micro">
+              <span class="check">✓</span> Sin frameworks
+              <span class="check">✓</span> Editable
+              <span class="check">✓</span> Responsive
+            </span>
+          </div>
+
+          <p class="form-note" style="margin-top:14px;">
+            Tip: cambia el nombre “VendeCon”, textos y precios. Si usas WhatsApp o Stripe, te dejo dónde enchufarlo.
+          </p>
+        </div>
+
+        <aside class="panel" aria-label="Vista previa de métricas">
+          <div class="panel-inner">
+            <div class="badge">⚡ Optimizada para conversión</div>
+            <div class="stat-grid">
+              <div class="stat">
+                <div class="kpi" id="kpi1">+23%</div>
+                <div class="lbl">mejor tasa de contacto*</div>
+              </div>
+              <div class="stat">
+                <div class="kpi" id="kpi2">1.2s</div>
+                <div class="lbl">carga percibida (rápida)</div>
+              </div>
+              <div class="stat">
+                <div class="kpi">SEO</div>
+                <div class="lbl">semántica HTML5</div>
+              </div>
+              <div class="stat">
+                <div class="kpi">CTA</div>
+                <div class="lbl">llamados claros</div>
+              </div>
+            </div>
+
+            <div class="mock">
+              <h3>Embudo simple</h3>
+              <div class="bar" title="Progreso"><i></i></div>
+              <p class="form-note" style="margin:10px 0 0;">
+                Atención → Beneficio → Prueba social → Precio → Acción.
+              </p>
+            </div>
+          </div>
+        </aside>
+      </div>
+      <p class="form-note">*Dato ilustrativo. Lo importante es el enfoque: claridad + prueba social + CTA.</p>
+    </section>
+
+    <!-- BENEFICIOS -->
+    <section id="beneficios">
+      <div class="section-title">
+        <div>
+          <h2>Beneficios que sí importan</h2>
+          <p>Menos adorno, más intención. Cada bloque existe para empujar a la acción.</p>
+        </div>
+      </div>
+
+      <div class="grid3">
+        <article class="card">
+          <div class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M6 12h12M12 6v12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Mensaje ultra claro</h3>
+          <p>Propuesta de valor visible arriba: qué vendes, para quién, y por qué te deben creer.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M4 12l4 4L20 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>CTAs bien puestos</h3>
+          <p>Botones con intención (no “ver más”): guían a precio o contacto sin confundir.</p>
+        </article>
+
+        <article class="card">
+          <div class="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M12 2l3 7 7 3-7 3-3 7-3-7-7-3 7-3 3-7z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Prueba social</h3>
+          <p>Testimonios + FAQ: reducen objeciones y bajan la fricción mental al comprar.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- CARACTERÍSTICAS -->
+    <section id="caracteristicas">
+      <div class="section-title">
+        <div>
+          <h2>Qué incluye</h2>
+          <p>Todo en un solo archivo: fácil de editar, copiar y desplegar.</p>
+        </div>
+      </div>
+
+      <div class="grid3">
+        <article class="card">
+          <h3>Secciones de venta</h3>
+          <p>Hero, beneficios, características, testimonios, precios, FAQ, CTA, contacto y footer.</p>
+        </article>
+        <article class="card">
+          <h3>Responsive real</h3>
+          <p>Se adapta a móvil sin pelearte con 2000 líneas. Menú móvil incluido.</p>
+        </article>
+        <article class="card">
+          <h3>JS mínimo</h3>
+          <p>Toggle mensual/anual, validación básica y menú. Lo justo para vender.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- TESTIMONIOS -->
+    <section id="testimonios">
+      <div class="section-title">
+        <div>
+          <h2>Opiniones</h2>
+          <p>Ejemplos de prueba social. Reemplázalos por clientes reales (y listo).</p>
+        </div>
+      </div>
+
+      <div class="grid3">
+        <article class="card">
+          <div class="stars" aria-label="5 estrellas">★★★★★</div>
+          <p class="quote">“La gente entendió en 10 segundos qué ofrezco. Subieron las consultas el primer día.”</p>
+          <div class="who"><span class="avatar"></span> Andrea · Servicios</div>
+        </article>
+        <article class="card">
+          <div class="stars" aria-label="5 estrellas">★★★★★</div>
+          <p class="quote">“Por fin una landing simple. Cambié textos, agregué WhatsApp y publiqué.”</p>
+          <div class="who"><span class="avatar"></span> Diego · Consultoría</div>
+        </article>
+        <article class="card">
+          <div class="stars" aria-label="5 estrellas">★★★★★</div>
+          <p class="quote">“El bloque de precios + FAQ me ahorró 30 preguntas repetidas por semana.”</p>
+          <div class="who"><span class="avatar"></span> Camila · Cursos</div>
+        </article>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="precios">
+      <div class="pricing-top">
+        <div class="section-title" style="margin:0;">
+          <div>
+            <h2>Precios</h2>
+            <p>Ejemplo con mensual/anual. Cambia valores según tu oferta.</p>
+          </div>
+        </div>
+
+        <div class="toggle" aria-label="Cambiar plan mensual o anual">
+          <span>Mensual</span>
+          <div class="switch" id="billingSwitch" role="switch" aria-checked="false" tabindex="0" data-on="false">
+            <div class="knob" aria-hidden="true"></div>
+          </div>
+          <span>Anual <span style="color:rgba(46,229,157,.9); font-weight:900;">(-20%)</span></span>
+        </div>
+      </div>
+
+      <div class="grid3">
+        <article class="card">
+          <div class="badge">Para empezar</div>
+          <div class="price"><span data-price="starter">19</span><span style="font-size:.6em; font-weight:800;"> USD</span></div>
+          <div class="per">/ <span data-per="starter">mes</span></div>
+          <ul class="list">
+            <li><span class="tick">✓</span> Landing + contacto</li>
+            <li><span class="tick">✓</span> CTA principal</li>
+            <li><span class="tick">✓</span> SEO básico</li>
+          </ul>
+          <div class="cta-row" style="margin-top:14px;">
+            <a class="btn" href="#contacto">Elegir</a>
+          </div>
+        </article>
+
+        <article class="card" style="border-color: rgba(124,92,255,.38); background: rgba(124,92,255,.10);">
+          <div class="badge">Más popular</div>
+          <div class="price"><span data-price="pro">39</span><span style="font-size:.6em; font-weight:800;"> USD</span></div>
+          <div class="per">/ <span data-per="pro">mes</span></div>
+          <ul class="list">
+            <li><span class="tick">✓</span> Todo lo Starter</li>
+            <li><span class="tick">✓</span> Testimonios + FAQ</li>
+            <li><span class="tick">✓</span> Sección de precios</li>
+            <li><span class="tick">✓</span> Integración WhatsApp (link)</li>
+          </ul>
+          <div class="cta-row" style="margin-top:14px;">
+            <a class="btn primary" href="#contacto">Lo quiero</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="badge">Para equipos</div>
+          <div class="price"><span data-price="team">79</span><span style="font-size:.6em; font-weight:800;"> USD</span></div>
+          <div class="per">/ <span data-per="team">mes</span></div>
+          <ul class="list">
+            <li><span class="tick">✓</span> Todo lo Pro</li>
+            <li><span class="tick">✓</span> Sección extra (casos)</li>
+            <li><span class="tick">✓</span> Formulario avanzado</li>
+          </ul>
+          <div class="cta-row" style="margin-top:14px;">
+            <a class="btn" href="#contacto">Hablemos</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+      <div class="section-title">
+        <div>
+          <h2>Preguntas frecuentes</h2>
+          <p>Esto baja objeciones y evita que te pregunten lo mismo 100 veces.</p>
+        </div>
+      </div>
+
+      <details>
+        <summary>¿Cómo lo adapto a mi producto o servicio?</summary>
+        <p>Cambia textos, precios y enlaces. Todo está en un archivo. Busca “EDITA AQUÍ” en el código para ubicar rápido lo importante.</p>
+      </details>
+      <details>
+        <summary>¿Puedo conectar pagos (Stripe/MercadoPago)?</summary>
+        <p>Sí. Normalmente se hace reemplazando el botón “Comprar” por el link/checkout de tu pasarela. También puedes integrar un script externo.</p>
+      </details>
+      <details>
+        <summary>¿Esto funciona bien en celular?</summary>
+        <p>Sí. El diseño es responsive y el menú se vuelve móvil automáticamente.</p>
+      </details>
+    </section>
+
+    <!-- CTA FINAL + CONTACTO -->
+    <section id="contacto">
+      <div class="grid3" style="grid-template-columns: 1.1fr .9fr .9fr;">
+        <article class="card" style="grid-column: 1 / -1;">
+          <div class="section-title" style="margin-bottom:10px;">
+            <div>
+              <h2>Listo. Ahora haz que te contacten.</h2>
+              <p>Conecta este formulario a tu backend, a Formspree, a Google Forms, o reemplázalo por un botón de WhatsApp.</p>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="card" style="background: rgba(0,0,0,.12); border-style:dashed;">
+              <h3 style="margin:0 0 6px;">EDITA AQUÍ</h3>
+              <p style="margin:0; color:var(--muted); font-size:14px;">
+                ✅ Cambia el nombre de marca<br/>
+                ✅ Cambia los precios<br/>
+                ✅ Cambia el CTA a tu link de compra o WhatsApp<br/>
+                ✅ Reemplaza testimonios por reales
+              </p>
+              <div class="cta-row" style="margin-top:12px;">
+                <!-- WhatsApp: cambia el número -->
+                <a class="btn" href="https://wa.me/56900000000?text=Hola%20quiero%20más%20info" target="_blank" rel="noopener">
+                  Abrir WhatsApp
+                </a>
+                <!-- Link a checkout: cambia el href por tu pasarela -->
+                <a class="btn primary" href="#precios">Comprar ahora</a>
+              </div>
+            </div>
+
+            <div class="card">
+              <h3 style="margin:0 0 10px;">Contáctame</h3>
+              <form id="leadForm" novalidate>
+                <div class="form-row">
+                  <input id="name" name="name" type="text" placeholder="Nombre" autocomplete="name" required />
+                  <input id="email" name="email" type="email" placeholder="Email" autocomplete="email" required />
+                </div>
+                <input id="subject" name="subject" type="text" placeholder="Asunto (ej: Quiero el plan Pro)" />
+                <textarea id="message" name="message" placeholder="Cuéntame qué necesitas..." required></textarea>
+                <button class="btn primary" type="submit">Enviar</button>
+                <p class="form-note" id="formNote">No se envía a ningún lado aún: conecta el formulario a tu servicio preferido.</p>
+              </form>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container foot">
+      <div style="display:flex; align-items:center; gap:10px;">
+        <span class="logo" aria-hidden="true" style="width:28px;height:28px;border-radius:10px;"></span>
+        <span>© <span id="year"></span> VendeCon. Hecho para convertir.</span>
+      </div>
+      <div class="links">
+        <a href="#beneficios">Beneficios</a>
+        <a href="#precios">Precios</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Menú móvil
+    const menuBtn = document.getElementById('menuBtn');
+    const menu = document.getElementById('menu');
+    function toggleMenu(){
+      menu.classList.toggle('open');
+    }
+    if (menuBtn) menuBtn.addEventListener('click', toggleMenu);
+    menu.addEventListener('click', (e) => {
+      if (e.target.tagName === 'A') menu.classList.remove('open');
+    });
+
+    // Año footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Toggle precios mensual/anual
+    const billingSwitch = document.getElementById('billingSwitch');
+
+    const pricing = {
+      monthly: { starter: 19, pro: 39, team: 79, per: 'mes' },
+      yearly:  { starter: 15, pro: 31, team: 63, per: 'mes (fact. anual)' } // ejemplo prorrateado
+    };
+
+    function setBilling(isYearly){
+      const mode = isYearly ? 'yearly' : 'monthly';
+      document.querySelectorAll('[data-price]').forEach(el => {
+        const key = el.getAttribute('data-price');
+        el.textContent = pricing[mode][key];
+      });
+      document.querySelectorAll('[data-per]').forEach(el => {
+        el.textContent = pricing[mode].per;
+      });
+
+      billingSwitch.dataset.on = String(isYearly);
+      billingSwitch.setAttribute('aria-checked', String(isYearly));
+    }
+
+    function flipBilling(){
+      const isOn = billingSwitch.dataset.on === 'true';
+      setBilling(!isOn);
+    }
+
+    billingSwitch.addEventListener('click', flipBilling);
+    billingSwitch.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        flipBilling();
+      }
+    });
+
+    // Form validation (demo)
+    const leadForm = document.getElementById('leadForm');
+    const formNote = document.getElementById('formNote');
+    leadForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+
+      const ok = name.length >= 2 && email.includes('@') && message.length >= 6;
+
+      if (!ok) {
+        formNote.textContent = 'Revisa: nombre, email y mensaje (mínimo 6 caracteres).';
+        formNote.style.color = 'rgba(255,150,150,.92)';
+        return;
+      }
+
+      // Conecta aquí tu envío real (fetch a tu backend / Formspree / etc.)
+      formNote.textContent = '¡Listo! (Demo) Ahora conecta el formulario a tu servicio de envío.';
+      formNote.style.color = 'rgba(46,229,157,.92)';
+      leadForm.reset();
+    });
+  </script>
+</body>
+</html>
