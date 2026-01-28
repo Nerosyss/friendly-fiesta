@@ -54,38 +54,154 @@
       background: rgba(11,16,32,.55);
       border-bottom: 1px solid rgba(255,255,255,.08);
     }
-    # Friendly Fiesta — Proyecto
+# 🚀 VendeCon — Landing Page de Conversión
 
-    He organizado el proyecto para que el HTML, CSS y el servidor Python estén en su lugar.
+Una plantilla profesional de landing page diseñada para **convertir visitas en clientes**. Clara, rápida, responsive y lista para personalizar.
 
-    Archivos relevantes:
+## ✨ Características
 
-    - `index.html` — HTML principal de la landing.
-    - `css/style.css` — estilos extraídos del HTML.
-    - `server.py` — servidor Flask para pruebas locales (puerto 5500).
-    - `requirements.txt` — dependencias para `server.py`.
+- 🎨 **Diseño moderno** — Degradados, glassmorphism y animaciones suaves
+- 📱 **100% Responsive** — Se adapta automáticamente a móvil, tablet y desktop
+- ⚡ **Sin dependencias frontend** — HTML5 puro + CSS + JavaScript vanilla
+- 🎯 **Optimizada para conversión** — Hero claro, CTA intencionales, prueba social
+- 🔧 **Fácil de editar** — Estructura simple, comentarios "EDITA AQUÍ"
+- 🌙 **Dark theme profesional** — Colores degradados (púrpura → verde)
 
-    Cómo ejecutar:
+## 📂 Estructura del Proyecto
 
-    1) Usar Live Server (VS Code): abre la carpeta en VS Code y pulsa "Go Live" o clic derecho en `index.html` → "Open with Live Server".
+```
+friendly-fiesta/
+├── index.html              # Landing page completa (HTML + JS)
+├── css/
+│   └── style.css          # Estilos (separados, reutilizable)
+├── server.py              # Servidor Flask (opcional)
+├── requirements.txt       # Dependencias Python
+├── README.md              # Este archivo
+└── .vscode/
+    └── extensions.json    # Configuración VS Code recomendada
+```
 
-    2) Servidor HTTP simple con Python (sin dependencias):
+## 🚀 Cómo Usar
 
-    ```bash
-    cd "c:\Users\PC GAMER\OneDrive\Escritorio\friendly-fiesta-main\friendly-fiesta"
-    python -m http.server 5500
-    # luego abre http://127.0.0.1:5500
-    ```
+### Opción 1: Live Server (Recomendado - Sin Python)
 
-    3) Usar el servidor Flask incluido (necesita dependencias):
+1. Abre la carpeta en **VS Code**
+2. Instala la extensión **Live Server** (ritwickdey.LiveServer)
+3. Haz clic derecho en `index.html` → **"Open with Live Server"**
+4. Se abrirá en http://localhost:5500
 
-    ```bash
-    cd "c:\Users\PC GAMER\OneDrive\Escritorio\friendly-fiesta-main\friendly-fiesta"
-    python -m pip install -r requirements.txt
-    python server.py
-    # luego abre http://127.0.0.1:5500
-    ```
+**Ventaja:** Recarga automática al guardar cambios.
 
-    Notas:
-    - Si tu ruta contiene espacios o está en OneDrive y Live Server falla, mueve el proyecto a una carpeta sin espacios (ej. `C:\projects\friendly-fiesta`) y vuelve a intentarlo.
-    - El formulario en la landing es demo; conecta un backend real o servicios como Formspree para envío.
+### Opción 2: Servidor HTTP de Python (Sin dependencias)
+
+```bash
+cd "ruta/del/proyecto"
+python -m http.server 5500
+```
+
+Luego abre http://127.0.0.1:5500
+
+### Opción 3: Servidor Flask (Con dependencias)
+
+```bash
+cd "ruta/del/proyecto"
+pip install -r requirements.txt
+python server.py
+```
+
+Luego abre http://127.0.0.1:5500
+
+## ✏️ Personalización
+
+### Cambiar el nombre de la marca
+Busca `VendeCon` en `index.html` y reemplázalo por tu marca.
+
+### Cambiar precios
+En la sección `<!-- PRICING -->` del `index.html`, edita los valores:
+
+```html
+<span data-price="starter">19</span>  <!-- Cambiar 19 -->
+```
+
+Y en el bloque `pricing` del `<script>`:
+
+```javascript
+const pricing = {
+  monthly: { starter: 19, pro: 39, team: 79, per: 'mes' },
+  yearly:  { starter: 15, pro: 31, team: 63, per: 'mes (fact. anual)' }
+};
+```
+
+### Conectar WhatsApp
+En la sección **"EDITA AQUÍ"** del formulario, reemplaza el número:
+
+```html
+<a href="https://wa.me/TU_NUMERO?text=Hola%20quiero%20más%20info">
+  Abrir WhatsApp
+</a>
+```
+
+### Conectar el formulario
+El formulario es demo. Para enviar datos reales, integra:
+
+- **Formspree** — Copia `action="https://formspree.io/f/TU_ID"`
+- **Backend propio** — Reemplaza el event listener en el `<script>`
+- **Google Forms** — Incrusta un iframe
+
+## 📋 Secciones Incluidas
+
+✅ **Header** — Navegación sticky con menú móvil
+✅ **Hero** — Propuesta de valor + CTA principal
+✅ **Beneficios** — 3 razones clave por las que comprar
+✅ **Características** — Qué incluye la oferta
+✅ **Testimonios** — Prueba social (5 estrellas)
+✅ **Precios** — Toggle mensual/anual con 3 planes
+✅ **FAQ** — Preguntas frecuentes (colapsables)
+✅ **Contacto** — Formulario + CTA WhatsApp
+✅ **Footer** — Links y copyright
+
+## 🎨 Personalización CSS
+
+Edita las variables en `css/style.css`:
+
+```css
+:root {
+  --bg: #0b1020;           /* Fondo oscuro */
+  --brand: #7c5cff;        /* Color principal (púrpura) */
+  --brand2: #2ee59d;       /* Color secundario (verde) */
+  --text: rgba(255,255,255,.92);  /* Texto principal */
+  --muted: rgba(255,255,255,.70); /* Texto secundario */
+}
+```
+
+## 🔗 Deployment
+
+### Netlify / Vercel (Gratis)
+
+1. Sube el proyecto a GitHub
+2. Conecta con Netlify o Vercel
+3. Deploy automático en cada push
+
+### Tu servidor / Hosting
+
+1. Descarga los archivos
+2. Sube `index.html`, `css/` a tu hosting
+3. El formulario necesitará backend o un servicio como Formspree
+
+## 📞 Soporte
+
+- Los botones CTA llevan a secciones internas (#beneficios, #precios, etc.)
+- El menú móvil se activa automáticamente en pantallas < 920px
+- Toggle de precios funciona en tiempo real
+- Validación básica del formulario (nombre, email, mensaje)
+
+## 📝 Notas
+
+- **Sin frameworks** — Funciona en navegadores modernos (últimos 2 años)
+- **Accesible** — Etiquetas semánticas, ARIA, contrast ratios apropiados
+- **Optimizada** — CSS crítico inline, carga rápida
+- **Editable** — Busca `EDITA AQUÍ` para puntos principales
+
+## 📄 Licencia
+
+Libre para usar y modificar. ¡Éxito vendiendo! 🚀
